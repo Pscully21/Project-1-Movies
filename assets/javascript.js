@@ -53,9 +53,20 @@ var rapid_api_function = function (id) {
         }
     };
     fetch(`https://streaming-availability.p.rapidapi.com/get/basic?country=us&imdb_id=${movie_id}&output_language=en`, options)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
+    .then(function(rapid_api_response){
+        return rapid_api_response.json();
+    }    )
+    //PLAY WITH THIS
+    .then(function(rapid_api_data) {
+        console.log(rapid_api_data)
+        console.log(rapid_api_data.overview)
+        result2.innerHTML =
+        ` <h3>rapid api:     ${rapid_api_data.overview}</h3>
+        `
+    }    )
+    // .then(response => response.json())
+    // .then(response => console.log(response))
+    // .catch(err => console.error(err));
 }
 search_button.addEventListener("click", get_movies);
 window.addEventListener("load", get_movies);
