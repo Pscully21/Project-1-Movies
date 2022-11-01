@@ -2,6 +2,7 @@ var url_global ="https://www.omdbapi.com/?i=tt3896198&apikey=2ad1c934";
 var url_movie = "https://www.omdbapi.com/?apikey=2ad1c934&t=saw";
 var movie_input=  document.getElementById("movie-name")
 var search_button=  document.getElementById("search-btn")
+
 var result = document.getElementById("result-container");
 var result_image = document.getElementById("result-image");
 var result_rapid = document.getElementById("result_rapid");
@@ -212,5 +213,7 @@ async function rapid_api(input){
 
 
 }
+
+
 
 
