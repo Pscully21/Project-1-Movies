@@ -23,9 +23,9 @@ The User inputs a movie name, clicks on the search button and the application wi
 
 
 ## Repository link
-
+https://github.com/Pscully21/Project-1-Movies
 
 
 ## Web Site Link
-
+https://pscully21.github.io/Project-1-Movies/
 
