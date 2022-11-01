@@ -1,53 +1,83 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Movie Dashboard</title>
+    
+    <style>
+        body {
+          
+        background-image: url("assets/images/corina-rainer-P2wLo_PzHjU-unsplash.jpg");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        }
+        
+        p {
+          /* color: rgba(255, 255, 255); */
+          color: white;
+          background-color: rgba(128, 128, 128, 0.241);
+          outline: gray;
 
 
+        }
+        h2 {
+          color: white;
+          background-color: rgba(128, 128, 128, 0.241);
+          outline: gray;
+
+
+        }
+        
+    </style> 
+   
+  </head>
+  <body>
     <div class="container">
-        <h2>Enter Movie Name below</h2>
-        <div class="search-container">
-          <input
-            type="text"
-            placeholder="Enter movie name heree..."
-            id="movie-name"
-            value="dark knight"
-          />
-          <button id="search-btn">Search</button>
-        </div>
-        <div id="result"></div>
+      <h2
+        class="text-3xl font-bold underline flex items-center justify-center mx-auto my-6"
+      >
+        Enter Movie Name below
+      </h2>
+      <div
+        class="search-container flex items-center justify-center"
+      >
+        <input
+          class="m-5 p-3 border-2 border-black rounded"
+          type="text"
+          placeholder="Enter movie name here..."
+          id="movie-name"
+        />
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-6 rounded"
+          id="search-btn"
+          onclick="load_movies()"
+        >
+          Search
+        </button>
       </div>
+      <div class="relative h-320 w-320 grid grid-cols-2 gap-1">
+        <div class="relative mx-20" id="result-image"></div>
+        <div
+          class="relative my-20"
+        >
+        <div class="relative" id="result-container"></div>
+        <div
+          class="relative shadow-2xl"
+          id="result_rapid"
+        ></div>
+        </div>
+        </div>
+      </div>
+    </div>
 
-
-    
-<!-- <div class="search-container">
-<h3>Movie Input</h3>
-<div class="search-box">
-    <label for="">   
-        Movie Name
-    </label>
-<input type="text" id="moviename"  onclick ='find'>
-<button id="'search-btn">Search</button>
-</div>
-</div> -->
-<!-- 
-<form action="">
-<label for="">   
-    Movie Name
-</label>
-<input type="text" name="" id="movie-search-box"/> -->
-<!-- <button type="submit"></button> -->
-<!-- 
-</form> -->
-
-
-
-
-    
-    <script src="script2.js"></script>    
-</body>
+ 
+    <script src="assets/javascript.js"></script>
+  </body>
 </html>
+
