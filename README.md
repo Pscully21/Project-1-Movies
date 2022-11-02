@@ -19,6 +19,7 @@ The User inputs a movie name, clicks on the search button and the application wi
 * WHEN any of the APIs can’t find information related to the movie 
 * THEN a sorry message will be displayed
 
+![movieapp2](https://user-images.githubusercontent.com/113002223/199379285-07a433bb-11db-45ae-a16d-69303293a11c.png)
 
 
 
@@ -28,4 +29,6 @@ https://github.com/Pscully21/Project-1-Movies
 
 ## Web Site Link
 https://pscully21.github.io/Project-1-Movies/
+
+## contributors 
 
