@@ -30,10 +30,10 @@ https://github.com/Pscully21/Project-1-Movies
 ## Web Site Link
 https://pscully21.github.io/Project-1-Movies/
 
-## contributors 
-Griffin Woodson
-Eduardo Arellano
-Geovana Kidwell
-Andrew Lawrence
+## contributors,
+Griffin Woodson,
+Eduardo Arellano,
+Geovana Kidwell,
+Andrew Lawrence,
 Parker Scully
 
